@@ -132,7 +132,11 @@ View(GR_sites)
 **Challenge**: Can you subset the sitelist_table by a different primary vegetation type? How about by a different variable (table column)? Use the code cell below.
 
 ```{r}
+# Create a subset of only wetland sites 
+WL_sites <- subset(sitelist_table, primary_veg_type == "WL")  
 
+# View the first few wetland entries and entire table
+View(WL_sites)
 ```
 
 #### Create a Map of the PhenoCam Sites
